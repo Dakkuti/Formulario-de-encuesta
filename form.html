@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+    <h1 id="title">Bienvenido</h1>
+    <p id="description">Gracias por tomarse el tiempo para ayudarnos a mejorar la plataforma.</p>
+
+    <form id="survey-form">
+
+        <label id="name-label" for="name">Nombre</label>
+        <input type="text" name="name" id="name" placeholder="Introduce tu nombre" required>
+
+
+        <label id="email-label" for="email">Correo</label>
+        <input type="email" name="email" id="email" placeholder="Introduce tu correo" required>
+
+        <label id="number-label" for="number">Edad</label>
+        <input type="number" name="number" id="number" placeholder="Introduce tu edad" type="range" min="1" max="2" required>
+
+        <label id="title-app">Ocupación:</label>
+        <select id="dropdown" name="role" required>
+            <option disabled="" selected="" value="">Selecciona tu opción</option>
+            <option value="estudiante">Estudiante</option>
+            <option value="trabajador">Trabajador</option>
+            <option value="ama">Ama de casa</option>
+          </select>
+
+        <label id="title-app">¿Recomiendas nuestra aplicación?</label>
+
+        <p>Si</p>
+        <input name="opc-user" value="Si" type="radio" class="input-radio" checked="">
+
+        <p>Más o menos</p>
+        <input name="opc-user" value="Mas-Menos" type="radio" class="input-radio" checked="">
+
+        <p>No</p>
+        <input name="opc-user" value="No" type="radio" class="input-radio" checked="">
+
+
+        <label id="title-app">Selecciona tu carrera</label>
+        <select id="dropdown" name="role" required>
+            <option disabled="" selected="" value="">Selecciona tu opción</option>
+            <option value="estudiante">Artes</option>
+            <option value="Programación">Programación</option>
+            <option value="Marketing">Marketing</option>
+            <option value="otros">Otros</option>
+          </select>
+
+          <label id="title-app">¿Que nivel deseas tomar?</label>
+
+          <p>Básico</p>
+          <input name="basic" value="basic" type="checkbox" class="input-checkbox">
+
+          <p>Medio</p>
+          <input name="basic" value="basic" type="checkbox" class="input-checkbox">
+
+          <p>Intermedio</p>
+          <input name="basic" value="basic" type="checkbox" class="input-checkbox">
+
+          <p>Master</p>
+          <input name="basic" value="basic" type="checkbox" class="input-checkbox">
+
+          <h3>¿Porque deseas tomar este estudio? Cuentanos tu opinión</h3>
+          <textarea name="mensaje" placeholder="Comparte tu opinión"></textarea>
+
+          <input id="submit" type="submit" value="Enviar">
+    </form>
+</div>
+
+</body>
+
+</html>
